@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="sspring:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="sspring-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="sspring:war exploded" />
+    </root>
+  </artifact>
+</component>
