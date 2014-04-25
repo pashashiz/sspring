@@ -22,7 +22,7 @@ public class IndexController {
     @RequestMapping(value = "/user", method = RequestMethod.GET)
     public String createUser(Model model) {
         model.addAttribute("user", new User("", "", ""));
-        return "user_form";
+        return "login_form";
     }
 
     @RequestMapping(value = "/user", method = RequestMethod.POST)
@@ -31,7 +31,7 @@ public class IndexController {
                           @RequestParam("password") String password,
                           Model model) {
         model.addAttribute("user", new User(name + " is added", role, ""));
-        return "user_form";
+        return "login_form";
     }
 
 }

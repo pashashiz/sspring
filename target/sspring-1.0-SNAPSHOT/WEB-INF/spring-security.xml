@@ -6,13 +6,14 @@
            http://www.springframework.org/schema/security/spring-security.xsd">
 
     <http auto-config="true">
-        <intercept-url pattern="/home*" access="ROLE_ADMIN" />
+        <intercept-url pattern="/admin/**" access="ROLE_ADMIN" />
+        <form-login login-page="/login"/>
     </http>
 
     <authentication-manager>
         <authentication-provider>
             <user-service>
-                <user name="nagesh" password="chauhan@123" authorities="ROLE_ADMIN" />
+                <user name="pashashiz" password="80967143751" authorities="ROLE_ADMIN" />
             </user-service>
         </authentication-provider>
     </authentication-manager>
