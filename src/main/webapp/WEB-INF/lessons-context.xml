@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+         http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!-- Арбитр представлений, ищет представления в формате {prefix + имя + suffix} -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/"/>
+        <property name="suffix" value=".jspx"/>
+    </bean>
+
+    <bean id="dukePerformer" class="com.pm.smvc.lessons.beens.Juggler" >
+        <constructor-arg name="beanBags" value="15" />
+    </bean>
+
+    <bean id="sonet29" class="com.pm.smvc.lessons.beens.Sennet29" />
+
+    <bean id="dukePoeticPerformer" class="com.pm.smvc.lessons.beens.PoeticJuggler" scope="prototype" >
+        <constructor-arg name="beanBags" value="5" />
+        <constructor-arg name="poem" ref="sonet29" />
+    </bean>
+
+    <bean id="singleObject" class="com.pm.smvc.lessons.beens.SingleObject"
+          factory-method="getInstance"/>
+
+
+</beans>
