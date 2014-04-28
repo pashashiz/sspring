@@ -5,30 +5,48 @@
          http://www.springframework.org/schema/beans
          http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <!-- Арбитр представлений, ищет представления в формате {prefix + имя + suffix} -->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/views/"/>
-        <property name="suffix" value=".jspx"/>
-    </bean>
-
+    <!-- Инъекция значения в конструктор -->
     <bean id="dukePerformer" class="com.pm.smvc.lessons.beens.Juggler" >
         <constructor-arg name="beanBags" value="15" />
     </bean>
 
+    <!-- Инъекция значение и ссылки в конструктор -->
     <bean id="sonet29" class="com.pm.smvc.lessons.beens.Sennet29" />
-
     <bean id="dukePoeticPerformer" class="com.pm.smvc.lessons.beens.PoeticJuggler" scope="prototype" >
         <constructor-arg name="beanBags" value="5" />
         <constructor-arg name="poem" ref="sonet29" />
     </bean>
 
+    <!-- Инъекция значение и ссылки через методы setXxx -->
     <bean id="mikePoeticPerformer" class="com.pm.smvc.lessons.beens.PoeticJuggler" >
         <property name="beanBags" value="10" />
         <property name="poem" ref="sonet29" />
     </bean>
 
+    <!-- Создание объекта, посредством вызова метода -->
     <bean id="singleObject" class="com.pm.smvc.lessons.beens.SingleObject"
           factory-method="getInstance"/>
 
+    <!-- Наследование абстрактного компонента -->
+    <bean id="basePoeticPerformer" class="com.pm.smvc.lessons.beens.PoeticJuggler" abstract="true" >
+        <property name="beanBags" value="10" />
+        <property name="poem" ref="sonet29" />
+    </bean>
+    <bean id="benPoeticPerformer" class="com.pm.smvc.lessons.beens.PoeticJuggler" parent="basePoeticPerformer" />
+    <bean id="robPoeticPerformer" class="com.pm.smvc.lessons.beens.PoeticJuggler" parent="basePoeticPerformer" >
+        <property name="beanBags" value="6" />
+    </bean>
+
+    <!-- Замещение метода -->
+    <bean id="professionReplacer" class="com.pm.smvc.lessons.beens.ProfesionReplacer" />
+    <bean id="stivPoeticPerformer" class="com.pm.smvc.lessons.beens.PoeticJuggler" parent="basePoeticPerformer" >
+        <replaced-method name="getProfession" replacer="professionReplacer" />
+    </bean>
+
+    <!-- Внедрение меода чтения -->
+    <bean id="sonet18" class="com.pm.smvc.lessons.beens.Sennet18" />
+    <bean id="joePoeticPerformer" class="com.pm.smvc.lessons.beens.PoeticJuggler" parent="basePoeticPerformer" >
+        <lookup-method name="getPoem" bean="sonet18" />
+    </bean>
 
 </beans>

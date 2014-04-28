@@ -24,7 +24,15 @@ public class PoeticJuggler extends Juggler {
     @Override
     public void perform() throws PerformanceException {
         super.perform();
-        System.out.println("Poem is:");
+        System.out.println("Poem is: ");
         poem.recite();
+    }
+
+    public String getProfession() {
+        return "PoeticJuggler";
+    }
+
+    public Poem getPoem() {
+        return poem;
     }
 }

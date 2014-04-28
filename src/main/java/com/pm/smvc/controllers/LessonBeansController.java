@@ -1,8 +1,6 @@
 package com.pm.smvc.controllers;
 
-import com.pm.smvc.lessons.beens.PerformanceException;
-import com.pm.smvc.lessons.beens.Performer;
-import com.pm.smvc.lessons.beens.SingleObject;
+import com.pm.smvc.lessons.beens.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -24,6 +22,23 @@ public class LessonBeansController {
     @Autowired
     @Qualifier("mikePoeticPerformer")
     private Performer mikePoeticPerformer;
+
+    @Autowired
+    @Qualifier("benPoeticPerformer")
+    private Performer benPoeticPerformer;
+
+    @Autowired
+    @Qualifier("robPoeticPerformer")
+    private Performer robPoeticPerformer;
+
+    @Autowired
+    @Qualifier("stivPoeticPerformer")
+    private PoeticJuggler stivPoeticPerformer;
+
+    @Autowired
+    @Qualifier("joePoeticPerformer")
+    private PoeticJuggler joePoeticPerformer;
+
 
     @RequestMapping(value = {"lessons/beans"})
     public String index(Model model) {
@@ -47,8 +62,39 @@ public class LessonBeansController {
 
     @RequestMapping(value = {"lessons/beans/binding_components"})
     public String bindingComponents(Model model) {
-
+        try {
+            System.out.println("Ben Poetic:");
+            benPoeticPerformer.perform();
+            System.out.println("Rob Poetic:");
+            robPoeticPerformer.perform();
+        } catch (PerformanceException e) {
+            e.printStackTrace();
+        }
         return "lessons/beans";
     }
+
+    @RequestMapping(value = {"lessons/beans/replacing_method"})
+    public String replacingMethod(Model model) {
+        try {
+            System.out.println("Stiv Poetic (proffesion: " + stivPoeticPerformer.getProfession() + "):");
+            stivPoeticPerformer.perform();
+        } catch (PerformanceException e) {
+            e.printStackTrace();
+        }
+        return "lessons/beans";
+    }
+
+    @RequestMapping(value = {"lessons/beans/inject_get_method"})
+    public String inhectGetMethod(Model model) {
+        try {
+            System.out.println("Joe Poetic :");
+            joePoeticPerformer.perform();
+            System.out.println("get Poem :" + joePoeticPerformer.getPoem());
+        } catch (PerformanceException e) {
+            e.printStackTrace();
+        }
+        return "lessons/beans";
+    }
+
 
 }

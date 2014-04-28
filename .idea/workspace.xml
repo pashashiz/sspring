@@ -64,15 +64,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login_form.jspx" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login_form.jspx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="41" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="391">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="spring-security.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,19 +73,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="action-servlet.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/action-servlet.xml">
+      <file leaf-file-name="web.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="45" selection-start="622" selection-end="622" vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="561">
+            <state line="46" column="0" selection-start="1405" selection-end="1405" vertical-scroll-proportion="1.2713044" vertical-offset="51" max-vertical-offset="884">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lessons-context.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="lessons-context.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/lessons-context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="8" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.57244897" vertical-offset="0" max-vertical-offset="980">
+            <state line="47" column="110" selection-start="2362" selection-end="2362" vertical-scroll-proportion="-15.64" vertical-offset="408" max-vertical-offset="969">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sennet29.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/Sennet29.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="1" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
@@ -103,37 +103,7 @@
       <file leaf-file-name="Juggler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/Juggler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <folding>
-                <element signature="e#312#313#0" expanded="true" />
-                <element signature="e#352#353#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/controllers/IndexController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="40" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LessonBeansController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/controllers/LessonBeansController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="44" selection-start="1562" selection-end="1580" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PerformanceException.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/PerformanceException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+            <state line="24" column="0" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -142,19 +112,48 @@
       <file leaf-file-name="PoeticJuggler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/PoeticJuggler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="39" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+            <state line="35" column="20" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="714">
               <folding>
-                <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#463#464#0" expanded="true" />
+                <element signature="e#733#734#0" expanded="true" />
+                <element signature="e#760#761#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.jspx" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin.jspx">
+      <file leaf-file-name="Sennet18.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/Sennet18.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="11" selection-start="403" selection-end="403" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="323">
+            <state line="12" column="37" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfesionReplacer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/ProfesionReplacer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Poem.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/Poem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="17" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LessonBeansController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/controllers/LessonBeansController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="90" column="41" selection-start="2851" selection-end="2851" vertical-scroll-proportion="0.0" vertical-offset="1142" max-vertical-offset="1717">
               <folding />
             </state>
           </provider>
@@ -188,15 +187,17 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jspx" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/beans.jspx" />
         <option value="$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/Poem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/Sennet29.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/action-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/PerformanceException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/SingleObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/PoeticJuggler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/Juggler.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/lessons-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/Sennet29.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/ProfesionReplacer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/PoeticJuggler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/Sennet18.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pm/smvc/controllers/LessonBeansController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/lessons-context.xml" />
       </list>
     </option>
   </component>
@@ -217,8 +218,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1186" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -267,7 +268,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -339,40 +339,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sspring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sspring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lessons" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -490,6 +456,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -517,6 +484,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pm.smvc.lessons.beens" />
       <recent name="com.pm.smvc.controllers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -876,14 +844,15 @@
       <workItem from="1398428618449" duration="5943000" />
       <workItem from="1398583449589" duration="10802000" />
       <workItem from="1398672032593" duration="2968000" />
+      <workItem from="1398706616562" duration="5691000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50727000" />
+    <option name="totallyTimeSpent" value="56418000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -908,8 +877,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328807" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20979765" sideWeight="0.49678457" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58195925" sideWeight="0.76411074" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20937042" sideWeight="0.49678457" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40032154" sideWeight="0.76411074" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.32960597" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="781" y="323" width="610" height="262" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -939,20 +908,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login_form.jspx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="41" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-security.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="29" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="442">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin.jspx">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="11" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="323">
@@ -1150,21 +1105,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="20" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
-          <folding />
-        </state>
+        <state line="23" column="20" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.0.3.RELEASE/spring-web-4.0.3.RELEASE.jar!/org/springframework/web/bind/annotation/RequestMapping.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="18" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="476" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="55" selection-start="2020" selection-end="2020" vertical-scroll-proportion="0.0" vertical-offset="543" max-vertical-offset="1241">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/controllers/AdminController.java">
@@ -1186,23 +1132,9 @@
         <state line="131" column="0" selection-start="11111" selection-end="11111" vertical-scroll-proportion="0.46896553" vertical-offset="2142" max-vertical-offset="2312" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jspx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="11" selection-start="427" selection-end="427" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin.jspx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="11" selection-start="403" selection-end="403" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="323">
+        <state line="12" column="11" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="323">
           <folding />
         </state>
       </provider>
@@ -1221,43 +1153,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/PoeticJuggler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="39" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <folding>
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/Juggler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="0" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding>
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="11" selection-start="0" selection-end="427" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="323">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/controllers/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="40" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="646">
+        <state line="26" column="0" selection-start="791" selection-end="791" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/Sennet29.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="1" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/ProfesionReplacer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/PoeticJuggler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="20" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="714">
+          <folding>
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/Sennet18.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="37" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/lessons/beens/Poem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pm/smvc/controllers/LessonBeansController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="44" selection-start="1562" selection-end="1580" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+        <state line="90" column="41" selection-start="2851" selection-end="2851" vertical-scroll-proportion="0.0" vertical-offset="1142" max-vertical-offset="1717">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/action-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="45" selection-start="622" selection-end="622" vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="561">
+        <state line="26" column="0" selection-start="1348" selection-end="1348" vertical-scroll-proportion="-17.68" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/lessons-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="110" selection-start="2362" selection-end="2362" vertical-scroll-proportion="-15.64" vertical-offset="408" max-vertical-offset="969">
           <folding />
         </state>
       </provider>
@@ -1269,9 +1249,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/lessons-context.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="8" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.57244897" vertical-offset="0" max-vertical-offset="980">
+        <state line="46" column="0" selection-start="1405" selection-end="1405" vertical-scroll-proportion="1.2713044" vertical-offset="51" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
