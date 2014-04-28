@@ -4,6 +4,8 @@ public class PoeticJuggler extends Juggler {
 
     private Poem poem;
 
+    public PoeticJuggler() {}
+
     public PoeticJuggler(Poem poem) {
         super();
         this.poem = poem;
@@ -12,6 +14,10 @@ public class PoeticJuggler extends Juggler {
     public PoeticJuggler(int beanBags, Poem poem) {
         super(beanBags);
         System.out.println("Creating new PoeticJuggler...");
+        this.poem = poem;
+    }
+
+    public void setPoem(Poem poem) {
         this.poem = poem;
     }
 

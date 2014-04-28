@@ -12,6 +12,11 @@ public class Juggler implements Performer {
         this.beanBags = beanBags;
     }
 
+
+    public void setBeanBags(int beanBags) {
+        this.beanBags = beanBags;
+    }
+
     @Override
     public void perform() throws PerformanceException {
         System.out.println("JUGGLING " + beanBags + " BEANBAGS (Object hashCode: " + hashCode() + ")");

@@ -22,6 +22,11 @@
         <constructor-arg name="poem" ref="sonet29" />
     </bean>
 
+    <bean id="mikePoeticPerformer" class="com.pm.smvc.lessons.beens.PoeticJuggler" >
+        <property name="beanBags" value="10" />
+        <property name="poem" ref="sonet29" />
+    </bean>
+
     <bean id="singleObject" class="com.pm.smvc.lessons.beens.SingleObject"
           factory-method="getInstance"/>
 

@@ -21,6 +21,10 @@ public class LessonBeansController {
     @Qualifier("dukePoeticPerformer")
     private Performer dukePoeticPerformer;
 
+    @Autowired
+    @Qualifier("mikePoeticPerformer")
+    private Performer mikePoeticPerformer;
+
     @RequestMapping(value = {"lessons/beans"})
     public String index(Model model) {
         try {
@@ -32,10 +36,18 @@ public class LessonBeansController {
             dukePerformer.perform();
             System.out.println("Duke Poetic 2:");
             dukePoeticPerformer.perform();
+            System.out.println("Mike Poetic 1:");
+            mikePoeticPerformer.perform();
         } catch (PerformanceException e) {
             e.printStackTrace();
         }
         System.out.println(SingleObject.getInstance().toString());
+        return "lessons/beans";
+    }
+
+    @RequestMapping(value = {"lessons/beans/binding_components"})
+    public String bindingComponents(Model model) {
+
         return "lessons/beans";
     }
 
