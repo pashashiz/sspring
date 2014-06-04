@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="
-         http://www.springframework.org/schema/beans
-         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
 
     <!-- Инъекция значения в конструктор -->
     <bean id="dukePerformer" class="com.pm.smvc.lessons.beens.Juggler" >
@@ -11,7 +14,7 @@
     </bean>
 
     <!-- Инъекция значение и ссылки в конструктор -->
-    <bean id="sonet29" class="com.pm.smvc.lessons.beens.Sennet29" />
+    <bean id="sonet29" class="com.pm.smvc.lessons.beens.Sonnet29" />
     <bean id="dukePoeticPerformer" class="com.pm.smvc.lessons.beens.PoeticJuggler" scope="prototype" >
         <constructor-arg name="beanBags" value="5" />
         <constructor-arg name="poem" ref="sonet29" />
@@ -44,9 +47,36 @@
     </bean>
 
     <!-- Внедрение меода чтения -->
-    <bean id="sonet18" class="com.pm.smvc.lessons.beens.Sennet18" />
+    <bean id="sonet18" class="com.pm.smvc.lessons.beens.Sonnet18" />
     <bean id="joePoeticPerformer" class="com.pm.smvc.lessons.beens.PoeticJuggler" parent="basePoeticPerformer" >
         <lookup-method name="getPoem" bean="sonet18" />
     </bean>
+
+    <!-- Spring AOP -->
+    <bean id="henryPoeticPerformer" class="com.pm.smvc.lessons.aspect.CustomPoeticJuggler" parent="basePoeticPerformer" />
+    <bean id="methodCallPrinter" class="com.pm.smvc.lessons.aspect.xmlMethodCallPrinter" />
+    <bean id="henryHuman" class="com.pm.smvc.lessons.aspect.HenryHuman" />
+    <aop:config>
+        <!-- Управление жизненным циклом метода -->
+        <aop:aspect ref="methodCallPrinter">
+            <aop:pointcut id="PJPerform"
+                          expression="execution(* com.pm.smvc.lessons.aspect.CustomPoeticJuggler.perform()) and bean(henryPoeticPerformer)" />
+            <aop:around method="callAround" pointcut-ref="PJPerform" />
+            <aop:before method="callBefore" pointcut-ref="PJPerform" />
+            <aop:after method="callAfter" pointcut-ref="PJPerform" />
+            <aop:after-returning method="callAfterReturning" pointcut-ref="PJPerform" />
+            <aop:after-throwing method="callAfterThrowing" pointcut-ref="PJPerform" />
+        </aop:aspect>
+        <!-- Внедрение интерфейса -->
+        <aop:aspect>
+            <aop:declare-parents types-matching="com.pm.smvc.lessons.aspect.CustomPoeticJuggler+"
+                                 implement-interface="com.pm.smvc.lessons.aspect.Human"
+                                 delegate-ref="henryHuman" />
+        </aop:aspect>
+    </aop:config>
+    <!-- Добавление аннотированного аспекта -->
+    <bean id="beanPoeticPerformerAspect" class="com.pm.smvc.lessons.aspect.annotationsMethodCallPrinter" />
+    <bean id="bobPoeticPerformer" class="com.pm.smvc.lessons.aspect.Custom1PoeticJuggler" parent="basePoeticPerformer" />
+
 
 </beans>

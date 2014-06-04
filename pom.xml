@@ -5,20 +5,27 @@
     <artifactId>sspring</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>sspring Maven Webapp</name>
+    <name>Spring Start</name>
     <url>http://maven.apache.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.version>3.8.1</junit.version>
+        <junit.version>4.11</junit.version>
         <jstl.version>1.2</jstl.version>
+        <javax.inject.version>1</javax.inject.version>
         <spring.version>4.0.3.RELEASE</spring.version>
         <spring.security.version>3.2.3.RELEASE</spring.security.version>
+        <aspectj.version>1.6.11</aspectj.version>
+        <db.common-dbcp.version>1.4</db.common-dbcp.version>
+        <db.mysql-connector.version>5.1.30</db.mysql-connector.version>
+        <db.hibernate.version>4.3.5.Final</db.hibernate.version>
+        <log.slf4j-log4j12>1.6.1</log.slf4j-log4j12>
     </properties>
 
     <dependencies>
 
     <!-- Testing -->
+
     <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
@@ -26,11 +33,16 @@
         <scope>test</scope>
     </dependency>
 
-    <!-- Servlet -->
+    <!-- JavaEE -->
     <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>jstl</artifactId>
         <version>${jstl.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>javax.inject</groupId>
+        <artifactId>javax.inject</artifactId>
+        <version>${javax.inject.version}</version>
     </dependency>
 
     <!-- Spring -->
@@ -41,6 +53,12 @@
     </dependency>
     <dependency>
         <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>${spring.version}</version>
+
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
         <artifactId>spring-web</artifactId>
         <version>${spring.version}</version>
     </dependency>
@@ -48,6 +66,52 @@
         <groupId>org.springframework</groupId>
         <artifactId>spring-webmvc</artifactId>
         <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-aop</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-jdbc</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-orm</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+
+    <!-- Hibernate -->
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>${db.hibernate.version}</version>
+    </dependency>
+
+    <!-- AspectJ -->
+    <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjrt</artifactId>
+        <version>${aspectj.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>${aspectj.version}</version>
+    </dependency>
+
+    <!-- Data Base -->
+    <dependency>
+        <groupId>commons-dbcp</groupId>
+        <artifactId>commons-dbcp</artifactId>
+        <version>${db.common-dbcp.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>${db.mysql-connector.version}</version>
     </dependency>
 
     <!-- Spring Security -->
@@ -62,6 +126,14 @@
         <version>${spring.security.version}</version>
     </dependency>
 
+    <!-- logging -->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>${log.slf4j-log4j12}</version>
+    </dependency>
+
     </dependencies>
+
 
 </project>

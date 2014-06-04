@@ -8,8 +8,8 @@
     <body>
     <div>
         <form method="post" action="/login">
-            <input type="text" name="name" value="${user.name}"/>
-            <input type="password" name="password" value="${user.password}"/>
+            <input type="text" name="name" value="${oldUser.name}"/>
+            <input type="password" name="password" value="${oldUser.password}"/>
             <input type="submit"/>
         </form>
     </div>

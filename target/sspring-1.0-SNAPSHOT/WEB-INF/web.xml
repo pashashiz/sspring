@@ -4,17 +4,38 @@
 
 <web-app>
 
-    <display-name>Archetype Created Web Application</display-name>
+    <display-name>Start Spring</display-name>
 
     <!-- Параметры контекста -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
             /WEB-INF/action-servlet.xml,
+            /WEB-INF/data-base.xml,
             /WEB-INF/spring-security.xml,
             /WEB-INF/lessons-context.xml
         </param-value>
     </context-param>
+
+    <!--<security-constraint>-->
+        <!--<web-resource-collection>-->
+            <!--<web-resource-name>Memory Realm Sample</web-resource-name>-->
+            <!--<url-pattern>/*</url-pattern>-->
+        <!--</web-resource-collection>-->
+        <!--<auth-constraint>-->
+            <!--<role-name>admin</role-name>-->
+        <!--</auth-constraint>-->
+    <!--</security-constraint>-->
+    <!--<login-config>-->
+        <!--<auth-method>BASIC</auth-method>-->
+        <!--<realm-name>sspring</realm-name>-->
+    <!--</login-config>-->
+
+    <!-- Путь к настройкам log4j -->
+    <!--<context-param>-->
+        <!--<param-name>log4jConfigLocation</param-name>-->
+        <!--<param-value>/resources/log4j.properties</param-value>-->
+    <!--</context-param>-->
 
     <!-- Spring Security -->
     <filter>
@@ -30,6 +51,9 @@
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
+    <!--<listener>-->
+        <!--<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>-->
+    <!--</listener>-->
 
     <!-- Путь к диспетчеру сервлетов -->
     <servlet>

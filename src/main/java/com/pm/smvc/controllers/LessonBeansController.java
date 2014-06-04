@@ -1,15 +1,35 @@
 package com.pm.smvc.controllers;
 
 import com.pm.smvc.lessons.beens.*;
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+
 
 @Controller
-public class LessonBeansController {
+public class LessonBeansController implements BeanNameAware, ApplicationContextAware {
+
+    private String beanName;
+    private ApplicationContext applicationContext;
+
+    @Override
+    public void setBeanName(String beanName) {
+        this.beanName = beanName;
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        this.applicationContext = applicationContext;
+    }
 
     @Autowired
     @Qualifier("dukePerformer")
@@ -35,8 +55,8 @@ public class LessonBeansController {
     @Qualifier("stivPoeticPerformer")
     private PoeticJuggler stivPoeticPerformer;
 
-    @Autowired
-    @Qualifier("joePoeticPerformer")
+    @Inject
+    @Named("joePoeticPerformer")
     private PoeticJuggler joePoeticPerformer;
 
 
@@ -85,7 +105,7 @@ public class LessonBeansController {
     }
 
     @RequestMapping(value = {"lessons/beans/inject_get_method"})
-    public String inhectGetMethod(Model model) {
+    public String injectGetMethod(Model model) {
         try {
             System.out.println("Joe Poetic :");
             joePoeticPerformer.perform();
@@ -96,5 +116,11 @@ public class LessonBeansController {
         return "lessons/beans";
     }
 
+    @RequestMapping(value = {"lessons/beans/application_context"})
+    public String applicationContext(Model model) {
+        System.out.println("Bean name: " + beanName);
+        System.out.println("Application context: " + applicationContext);
+        return "lessons/beans";
+    }
 
 }

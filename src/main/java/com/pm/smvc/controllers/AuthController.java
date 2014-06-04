@@ -1,6 +1,5 @@
 package com.pm.smvc.controllers;
 
-import com.pm.smvc.model.User;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
